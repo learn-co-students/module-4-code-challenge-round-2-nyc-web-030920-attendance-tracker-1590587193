@@ -26,7 +26,7 @@ class CourseContainer extends Component {
   render() {
     return (
       <div className="ui grid container">
-        <CourseDetails  />
+        <CourseDetails  courses={this.state.courses}/>
         <CourseSelector courses={this.state.courses}/>
         <StudentsList students={this.state.students}/>
       </div>

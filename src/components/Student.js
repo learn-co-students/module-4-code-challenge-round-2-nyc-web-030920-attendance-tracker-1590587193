@@ -1,12 +1,18 @@
 import React from "react";
 
+class Student extends React.Component {
 
+  state = {
+    checkbox: false
+  }
+  
 
-const Student = () => (
-  <tr style={{ textAlign: "center" }}>
-    <td>"...your code here"</td>
-    <td>"...your code here"</td>
-    <td>"...your code here"</td>
+  render() {
+
+    return (    <tr style={{ textAlign: "center" }}>
+    <td>{this.props.student.name}</td>
+    <td>{this.props.student.class_year}</td>
+    <td>{this.props.student.percentage}</td>
     <td>
       <input
         type="checkbox"
@@ -15,6 +21,9 @@ const Student = () => (
       />
     </td>
   </tr>
-);
+);}
+  
+  }
+
 
 export default Student;

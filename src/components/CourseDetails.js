@@ -1,6 +1,6 @@
 import React from "react";
 
-const CourseDetails = props => {
+const CourseDetails = (props) => {
   return (
     <div className="ui center aligned header sixteen wide column">
       <p>{props.course.name}</p>
