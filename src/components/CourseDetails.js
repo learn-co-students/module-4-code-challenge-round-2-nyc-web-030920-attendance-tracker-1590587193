@@ -3,9 +3,9 @@ import React from "react";
 const CourseDetails = (props) => {
   return (
     <div className="ui center aligned header sixteen wide column">
-      <p>{props.course.name}</p>
-      <p>{props.course.instructor && `Ran by: ${props.course.instructor}`}</p>
-      <p>{props.course.semester && `During: ${props.course.semester}`}</p>
+      <p>{props.courses.name}</p>
+      <p>{props.courses.instructor && `Ran by: ${props.courses.instructor}`}</p>
+      <p>{props.courses.semester && `During: ${props.courses.semester}`}</p>
     </div>
   );
 };
@@ -13,9 +13,10 @@ const CourseDetails = (props) => {
 // This makes it so, when no course is passed
 // CourseDetails will still get a course, but it will be an empty object.
 CourseDetails.defaultProps = {
-  course: {
+  courses: {
     name: "No course selected."
   }
 };
 
 export default CourseDetails;
+
